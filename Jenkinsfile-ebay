@@ -11,7 +11,6 @@ node {
   }
   stage('4-UploadArticats') {
     sh "${mavenHome}/bin/mvn deploy"
- */
  }
   stage('5-Deploy-UAT') {
     deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://172.31.2.229:8000/')], contextPath: null, war: 'target/*.war'
@@ -29,7 +28,7 @@ node {
       
    }
    stage ('Prod-Deploy') {
-/*
+   
       }
       
   }
