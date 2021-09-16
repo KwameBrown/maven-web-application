@@ -27,4 +27,3 @@ node {
        input message: 'Please verify and approve'
       }
   }
- 
