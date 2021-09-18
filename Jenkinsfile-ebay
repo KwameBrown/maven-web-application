@@ -32,3 +32,4 @@ node {
        deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://172.31.2.229:8000/')], contextPath: null, war: 'target/*.war'
 
   }
+}
