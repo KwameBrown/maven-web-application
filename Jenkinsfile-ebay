@@ -6,6 +6,7 @@ node {
   stage('2-mavenBuild') {
      sh "${mavenHome}/bin/mvn clean package"
   }
+  /*
   stage('3-CodeQuality') {
      sh "${mavenHome}/bin/mvn sonar:sonar"
   }
@@ -32,4 +33,5 @@ node {
        deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://172.31.2.229:8000/')], contextPath: null, war: 'target/*.war'
 
   }
+  */
 }
